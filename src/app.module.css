@@ -1,0 +1,63 @@
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 46rem;
+    margin: -1.68rem auto 0 auto;
+    padding: 0.2rem;
+}
+
+.inputContainer {
+    gap: 0.5rem;
+    display: flex;
+    width: 100%
+}
+
+.inputContainer input {
+    height: 3.37rem;
+    background-color:var(--gray-500) ;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    font-size: 1rem;
+    line-height: 1.4;
+    border: 0;
+    flex: 1;
+}
+
+.inputContainer input::placeholder {
+    color: var(--gray-300);
+}
+
+.inputContainer button {
+    height: 3.37rem;
+    width: 5.62rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--blue-dark);
+    color: var(--gray-100);
+    font-size: 0,875rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    transition: 0.2s;
+}
+
+.inputContainer button:hover {
+    background-color: var(--blue);
+}
+
+@media( max-width: 768px) {
+
+    html {
+        font-size: 87.5%;
+    }
+
+    .inputContainer button > span {
+        display: none;
+    }
+}
